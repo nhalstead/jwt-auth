@@ -257,6 +257,36 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Cookies Name
+    |--------------------------------------------------------------------------
+    |
+    | By default the cookie that gets used as the point to read from is
+    | named `token`. Once changing this is instructing the Cookies Parser
+    | to read from the provided cookie name.
+    |
+    | Set it to null if you want to use the default setting.
+    |
+    */
+
+    'cookie_name' => null,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Query Param Name
+    |--------------------------------------------------------------------------
+    |
+    | By default the query param that gets used as the point to read from is
+    | named `token`. Once changing this is instructing the QueryString Parser
+    | to read from the provided URL query param.
+    |
+    | Set it to null if you want to use the default setting.
+    |
+    */
+
+    'query_param' => null,
+
+    /*
+    |--------------------------------------------------------------------------
     | Providers
     |--------------------------------------------------------------------------
     |

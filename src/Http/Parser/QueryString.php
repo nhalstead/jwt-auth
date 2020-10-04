@@ -18,6 +18,13 @@ class QueryString implements ParserContract
 {
     use KeyTrait;
 
+    public function __construct($queryParamName = null) {
+
+        if($queryParamName) {
+            $this->key = $queryParamName;
+        }
+    }
+
     /**
      * Try to parse the token from the request query string.
      *
